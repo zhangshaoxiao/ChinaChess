@@ -1,0 +1,357 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Chess.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Chess.ico"
+IDI_B_B                 ICON    DISCARDABLE     "res\\b_b12.ico"
+IDI_B_M                 ICON    DISCARDABLE     "res\\b_m1.ico"
+IDI_B_S                 ICON    DISCARDABLE     "res\\b_s1.ico"
+IDI_B_X                 ICON    DISCARDABLE     "res\\b_x2.ico"
+IDI_B_C                 ICON    DISCARDABLE     "res\\ico00001.ico"
+IDI_B_P                 ICON    DISCARDABLE     "res\\ico00002.ico"
+IDI_B_K                 ICON    DISCARDABLE     "res\\ico00003.ico"
+IDI_R_B                 ICON    DISCARDABLE     "res\\RED_B.ico"
+IDI_R_C                 ICON    DISCARDABLE     "res\\RED_J.ico"
+IDI_R_K                 ICON    DISCARDABLE     "res\\RED_K.ico"
+IDI_R_M                 ICON    DISCARDABLE     "res\\RED_M.ico"
+IDI_R_P                 ICON    DISCARDABLE     "res\\RED_P.ico"
+IDI_R_S                 ICON    DISCARDABLE     "res\\RED_S.ico"
+IDI_R_X                 ICON    DISCARDABLE     "res\\RED_X.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 63
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Chess"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,15,20,20
+    DEFPUSHBUTTON   "确定",IDOK,178,18,50,20,WS_GROUP
+    LTEXT           "武汉大学计算机学院信息安全",IDC_STATIC,40,10,132,14
+    LTEXT           "朱章厚 马宏 王伟 程舒晗",IDC_STATIC,40,30,130,15
+END
+
+IDD_CHESS_DIALOG DIALOGEX 0, 0, 341, 278
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "象棋"
+MENU IDR_MENU1
+FONT 9, "宋体"
+BEGIN
+END
+
+IDD_CONNECTSEVERDLG DIALOGEX 0, 0, 147, 81
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "连接服务器"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,28,63,36,12
+    PUSHBUTTON      "Cancel",IDCANCEL,90,63,38,12
+    LTEXT           "服务器IP:",IDC_STATIC,8,22,33,10
+    RTEXT           "端口号:",IDC_STATIC,12,40,27,10
+    EDITTEXT        IDC_PORTEDIT,42,38,30,12,ES_AUTOHSCROLL
+    GROUPBOX        "输入服务器的ip地址和端口:",IDC_STATIC,5,3,136,54
+    LTEXT           "(大于1024)",IDC_STATIC,77,39,40,11
+    EDITTEXT        IDC_IPADDRESSEDIT1,42,20,19,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_IPADDRESSEDIT2,64,20,19,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_IPADDRESSEDIT3,87,20,19,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_IPADDRESSEDIT4,109,20,19,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+END
+
+IDD_SETRUNMODE DIALOG DISCARDABLE  0, 0, 129, 83
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,83,14,33,10
+    PUSHBUTTON      "Cancel",IDCANCEL,83,34,33,10
+    GROUPBOX        "谁先下:",IDC_STATIC,7,7,60,45
+    LTEXT           "注意：\n     只有做服务器才有这个权利！",IDC_STATIC,7,
+                    56,115,20
+    CONTROL         "黑先下",IDC_WHOFIRSTBLACK,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,22,40,11
+    CONTROL         "红先下",IDC_WHOFIRSTRED,"Button",BS_AUTORADIOBUTTON,13,
+                    36,44,10
+END
+
+IDD_STARTSERVERDLG DIALOG DISCARDABLE  0, 0, 122, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置端口"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,80,13,33,14
+    PUSHBUTTON      "Cancel",IDCANCEL,81,37,33,14
+    GROUPBOX        "设置端口:",IDC_STATIC,7,7,72,52
+    LTEXT           "端口号:",IDC_STATIC,14,22,26,9
+    EDITTEXT        IDC_SERVERPORT,14,36,47,14,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Chess Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Chess\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2007\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Chess.EXE\0"
+            VALUE "ProductName", "Chess 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_CHESS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 271
+    END
+
+    IDD_CONNECTSEVERDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 141
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_SETRUNMODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_STARTSERVERDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 115
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\muban.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\muban22.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "开 始(&O)"
+    BEGIN
+        MENUITEM "创建服务器",                  ID_START_CREATESERVER
+        MENUITEM "连接服务器",                  ID_START_CONNECTSERVER
+        MENUITEM "断 开 连接",                  ID_START_CLOSESOCKET
+        MENUITEM "退 出 游戏",                  ID_START_EXIT
+    END
+    POPUP "设 置(&S)"
+    BEGIN
+        MENUITEM "下棋模式(&M)",                ID_SET_RUNMODE
+        POPUP "选择背景(&C)"
+        BEGIN
+            MENUITEM "无背景",                      ID_SET_BCOLOSE_0
+            MENUITEM "背景一",                      ID_SET_BCOLOSE_1
+            MENUITEM "背景二",                      ID_SET_BCOLOSE_2
+        END
+        MENUITEM "置换棋盘(&P)",                ID_SET_CHANGESTONE
+    END
+    POPUP "动 作(&A)"
+    BEGIN
+        MENUITEM "悔 棋 (&R)",                  ID_ACTION_REMOVE
+        MENUITEM "认 输 (&L)",                  ID_ACTION_LOSE
+        MENUITEM "新棋局(&N)",                  ID_ACTINO_NEW
+    END
+    POPUP "帮 助(&H)"
+    BEGIN
+        MENUITEM "说 明(&E)",                   ID_HELP_EXPLAIN
+        MENUITEM "关 于(&A)",                   ID_HELP_ABOUT
+        MENUITEM "本机 IP",                     ID_HELP_GETIP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR2             CURSOR  DISCARDABLE     "res\\cursor2.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Chess(&A)..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_START_CREATESERVER   "创建服务器"
+    ID_STARTCONNECT         "连接服务器"
+    ID_STARTEXIT            "退 出 游戏"
+    ID_SET_RUNMODE          "下棋模式"
+    ID_SET_BCOLOSE          "选择背景"
+    ID_SET_CHANGESTONE      "置换棋子("
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Chess.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

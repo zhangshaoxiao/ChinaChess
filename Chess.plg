@@ -1,0 +1,96 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Chess - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/Chess.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\Administrator\桌面\新建文件夹 (2)\Chess\Chess.cpp"
+"C:\Documents and Settings\Administrator\桌面\新建文件夹 (2)\Chess\ChessDlg.cpp"
+"C:\Documents and Settings\Administrator\桌面\新建文件夹 (2)\Chess\ClientSocket.cpp"
+"C:\Documents and Settings\Administrator\桌面\新建文件夹 (2)\Chess\ConnectDlg.cpp"
+"C:\Documents and Settings\Administrator\桌面\新建文件夹 (2)\Chess\Messg.cpp"
+"C:\Documents and Settings\Administrator\桌面\新建文件夹 (2)\Chess\Move.cpp"
+"C:\Documents and Settings\Administrator\桌面\新建文件夹 (2)\Chess\Plate.cpp"
+"C:\Documents and Settings\Administrator\桌面\新建文件夹 (2)\Chess\ServerSocket.cpp"
+"C:\Documents and Settings\Administrator\桌面\新建文件夹 (2)\Chess\SetRunModeDlg.cpp"
+"C:\Documents and Settings\Administrator\桌面\新建文件夹 (2)\Chess\StartServerDlg.cpp"
+"C:\Documents and Settings\Administrator\桌面\新建文件夹 (2)\Chess\Stone.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/Chess.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\Administrator\桌面\新建文件夹 (2)\Chess\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3.tmp" 
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+Chess.cpp
+ChessDlg.cpp
+C:\Documents and Settings\Administrator\桌面\新建文件夹 (2)\Chess\ChessDlg.cpp(390) : warning C4244: 'argument' : conversion from 'long' to 'const unsigned char', possible loss of data
+C:\Documents and Settings\Administrator\桌面\新建文件夹 (2)\Chess\ChessDlg.cpp(390) : warning C4244: 'argument' : conversion from 'long' to 'const unsigned char', possible loss of data
+ClientSocket.cpp
+ConnectDlg.cpp
+Messg.cpp
+Move.cpp
+Plate.cpp
+ServerSocket.cpp
+SetRunModeDlg.cpp
+StartServerDlg.cpp
+Stone.cpp
+Generating Code...
+C:\Documents and Settings\Administrator\桌面\新建文件夹 (2)\Chess\Move.cpp(76) : warning C4715: 'CMove::PushStack' : not all control paths return a value
+C:\Documents and Settings\Administrator\桌面\新建文件夹 (2)\Chess\ChessDlg.cpp(505) : warning C4715: 'CChessDlg::GetStoneNum' : not all control paths return a value
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Chess.pdb" /debug /machine:I386 /out:"Debug/Chess.exe" /pdbtype:sept 
+".\Debug\Chess.obj"
+".\Debug\ChessDlg.obj"
+".\Debug\ClientSocket.obj"
+".\Debug\ConnectDlg.obj"
+".\Debug\Messg.obj"
+".\Debug\Move.obj"
+".\Debug\Plate.obj"
+".\Debug\ServerSocket.obj"
+".\Debug\SetRunModeDlg.obj"
+".\Debug\StartServerDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Stone.obj"
+".\Debug\Chess.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4.tmp"
+<h3>Output Window</h3>
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP6.tmp" with contents
+[
+/nologo /o"Debug/Chess.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\Chess.sbr"
+".\Debug\ChessDlg.sbr"
+".\Debug\ClientSocket.sbr"
+".\Debug\ConnectDlg.sbr"
+".\Debug\Messg.sbr"
+".\Debug\Move.sbr"
+".\Debug\Plate.sbr"
+".\Debug\ServerSocket.sbr"
+".\Debug\SetRunModeDlg.sbr"
+".\Debug\StartServerDlg.sbr"
+".\Debug\Stone.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP6.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Chess.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
